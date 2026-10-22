@@ -1,0 +1,33 @@
+name: Gemini source and runtime conformance
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  exact-source-and-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Rebuild from immutable upstream and reject altered payloads
+        run: python -B tools/build_gemini.py --check . --self-test
+      - name: Real coordinator and every native entrypoint
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python -B skills/chief-of-staff/scripts/run.py self-test
+          python -B - <<'PYTHON'
+          import json, pathlib, subprocess, sys
+          entries = sorted(pathlib.Path('skills').glob('*/scripts/run.py'))
+          assert len(entries) == 62
+          for entry in entries:
+              context = json.loads(subprocess.check_output([sys.executable, '-B', str(entry), '--context'], text=True))
+              assert context['source_commit'] == 'ee38d3de3d4b0d5467a589d5cb908f4964f593fe'
+          print('PASS: 61 employees + chief-of-staff, 62 actual contexts')
+          PYTHON
