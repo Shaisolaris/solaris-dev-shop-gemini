@@ -75,12 +75,12 @@ def build(native, output):
     for name in ['hooks/hooks.json', 'policies', 'agents']:
         assert not (OUT/name).exists(), 'Unexpected automatic extension surface: '+name
     files = {str(f.relative_to(OUT)):{'sha256':sha(f.read_bytes()),'executable':bool(f.stat().st_mode&0o111)}
-             for f in OUT.rglob('*') if f.is_file()}
+             for f in sorted(OUT.rglob('*')) if f.is_file()}
     record = {'prototype':False,'profile':'Gemini CLI extension','source_native_commit':REVISION,
               'source_core_commit':CORE,'version':'0.63.0','canonical_files':len(provenance['canonical_files']),
               'workflows':62,'new_employee_capabilities':0,'omitted_other_provider_files':sorted(OMIT),
               'relocated_repository_configuration':relocated,'source_file_map':maps,'files':files}
-    (OUT/'GEMINI-BUILD-SOURCE.json').write_text(json.dumps(record,indent=2)+'\n')
+    (OUT/'GEMINI-BUILD-SOURCE.json').write_text(json.dumps(record,indent=2,sort_keys=True)+'\n')
     return {'candidate':str(OUT),'canonical_files':record['canonical_files'],
                       'workflows':62,'payload_files':len(files)+1,'relocated_configuration_files':len(relocated)}
 
