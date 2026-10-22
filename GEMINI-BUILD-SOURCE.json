@@ -1,5 +1,15 @@
 {
   "canonical_files": 1196,
+  "distribution_notice": {
+    "canonical_notice": "SOURCE-NOTICE.md",
+    "resource_license_aliases": [
+      {
+        "canonical_origin": "employees/design/ui-ux-designer/design-intelligence/LICENSE-upstream",
+        "path": "skills/ui-ux-designer/resources/canonical/employees/design/ui-ux-designer/design-intelligence/LICENSE-upstream",
+        "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+      }
+    ]
+  },
   "files": {
     "CHANGELOG.md": {
       "executable": false,
@@ -31,7 +41,7 @@
     },
     "NOTICE.md": {
       "executable": false,
-      "sha256": "4873642c0f2a1cddee4ca8c5e92b6af36311a37c9e52f2393b3db9fbfbffc8de"
+      "sha256": "60902bcb7c78f344c71d06cbc2f3df8a91c7582634772cd0cde98f2634757213"
     },
     "README.md": {
       "executable": false,
@@ -47,7 +57,7 @@
     },
     "SOLARIS-BUILD-SOURCE.json": {
       "executable": false,
-      "sha256": "610519e9977e54a42ec11f86e0ba0c9e3dc9fd98acc9163885bd722f30b0af67"
+      "sha256": "19414ae1d245dd25e0a049f6c3f81361a980d1f473acd1a02335116b92cc250b"
     },
     "SOURCE-COPILOT-LAYOUT.json": {
       "executable": false,
@@ -56,6 +66,10 @@
     "SOURCE-NATIVE-PROVENANCE.json": {
       "executable": false,
       "sha256": "66ddc714a0a40b7d807cf91b29f6236863467ab7f5ca772948ba243a44f6710a"
+    },
+    "SOURCE-NOTICE.md": {
+      "executable": false,
+      "sha256": "4873642c0f2a1cddee4ca8c5e92b6af36311a37c9e52f2393b3db9fbfbffc8de"
     },
     "SOURCE-README.md": {
       "executable": false,
