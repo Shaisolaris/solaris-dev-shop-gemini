@@ -28,6 +28,6 @@ jobs:
           assert len(entries) == 62
           for entry in entries:
               context = json.loads(subprocess.check_output([sys.executable, '-B', str(entry), '--context'], text=True))
-              assert context['source_commit'] == 'ee38d3de3d4b0d5467a589d5cb908f4964f593fe'
+              assert context['source_commit'] == '3a577e42c48473f6ef8680950dd55c067820d5d3'
           print('PASS: 61 employees + chief-of-staff, 62 actual contexts')
           PYTHON
