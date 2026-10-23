@@ -28,6 +28,9 @@ jobs:
           assert len(entries) == 62
           for entry in entries:
               context = json.loads(subprocess.check_output([sys.executable, '-B', str(entry), '--context'], text=True))
-              assert context['source_commit'] == '0d2ae8e76cba4e56dc01d9c621e553179b34c40e'
+              assert context['source_commit'] == '0391e15cc52ddfa88a6c02b5997fd9955e214491'
           print('PASS: 61 employees + chief-of-staff, 62 actual contexts')
           PYTHON
+
+      - name: Offline installation and explicit setup boundaries
+        run: python -B -m unittest discover -s tests -p test_explicit_runtime_setup.py

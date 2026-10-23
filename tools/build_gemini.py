@@ -18,8 +18,8 @@ from distribution_metadata import add_resource_notices
 
 HERE = Path(__file__).resolve().parent
 NATIVE_URL = 'https://github.com/Shaisolaris/solaris-dev-shop-plugins.git'
-REVISION = '2f5bbfe738eb8c50d75c62659a0dbf8b44ee931a'
-CORE = '0d2ae8e76cba4e56dc01d9c621e553179b34c40e'
+REVISION = '3e65eac657a155aab9d813a5093be6442ac57eef'
+CORE = '0391e15cc52ddfa88a6c02b5997fd9955e214491'
 OMIT = {'.claude-plugin/plugin.json', 'plugin.json', 'package.json', 'server.mjs', 'native/opencode.mjs'}
 CONTEXT = '''# Solaris Dev Shop
 
@@ -46,7 +46,7 @@ def build(native, output):
             name = item.name[len(prefix):]
             assert '..' not in Path(name).parts and not Path(name).is_absolute()
             original[name] = (source.extractfile(item).read(), bool(item.mode & 0o111))
-    assert len(original) == 1977
+    assert len(original) == 1978
     native_provenance = json.loads(original['SOLARIS-BUILD-SOURCE.json'][0])
     assert native_provenance['source_commit'] == CORE
     assert not OMIT.intersection(native_provenance['canonical_files'])
@@ -65,12 +65,12 @@ def build(native, output):
     provenance['canonical_files'] = {maps.get(name, name): digest for name, digest in provenance['canonical_files'].items()}
     provenance['source_path_map'].update(relocated)
     (OUT/'SOLARIS-BUILD-SOURCE.json').write_text(json.dumps(provenance, indent=2)+'\n')
-    manifest = {'name':'solaris-dev-shop','version':'0.65.0',
+    manifest = {'name':'solaris-dev-shop','version':'0.66.0',
                 'description':'61 specialist workflows and a chief of staff, backed by local delivery, recovery and evidence tools. Host tools and approvals apply.',
                 'contextFileName':'GEMINI.md'}
     (OUT/'gemini-extension.json').write_text(json.dumps(manifest, indent=2)+'\n')
     (OUT/'GEMINI.md').write_text(CONTEXT)
-    (OUT/'README.md').write_text("# Solaris Dev Shop for Gemini CLI\n\n**61 specialist employees + 1 chief-of-staff coordinator = 62 native workflows.**\n\nA native Gemini CLI extension with the pinned Solaris delivery, recovery and evidence runtime. Skills load on demand. The host supplies tools and approvals; local Python helpers require Python 3.10 or later. This is a workflow package, not 61 independently running model instances.\n\n## Install\n\n```sh\ngemini extensions install https://github.com/Shaisolaris/solaris-dev-shop-gemini\n```\n\nReview the CLI's installation and skill-activation prompts. Use `gemini skills list --all` to inspect discovery. For a reproducible installation, add `--ref <full reviewed commit SHA>` from this repository. Disable or uninstall using Gemini CLI's native extension commands.\n\n## Source and verification\n\nVersion **0.65.0** retains the reviewed native source at [2f5bbfe](https://github.com/Shaisolaris/solaris-dev-shop-plugins/commit/2f5bbfe738eb8c50d75c62659a0dbf8b44ee931a) and canonical core at [3a577e4](https://github.com/Shaisolaris/solaris-dev-shop/commit/0d2ae8e76cba4e56dc01d9c621e553179b34c40e). `GEMINI-BUILD-SOURCE.json` binds all generated payload bytes and executable modes. `SOLARIS-BUILD-SOURCE.json` binds the 1,199 canonical files. The portable builder verifies against a fresh checkout of the exact upstream revision, rather than trusting a caller-edited payload manifest:\n\n```sh\npython -B tools/build_gemini.py --check . --self-test\n```\n\nNative Gemini CLI **0.65.0** was tested for 62 enabled workflows, local entrypoint discovery, coordinator self-tests and real local SQLite restore outcomes. CLI management tests make no model calls; they do not establish model quality, Google endorsement, or a vulnerability-free product. Original 61 employees and branding are preserved. This packaging adds **zero new employee capabilities**.\n\nThe extension declares no MCP servers, settings, lifecycle hooks, agents or security policies. It does not grant filesystem access beyond the host's tools and permissions. Helpers are not a security sandbox. Review the workflow and its documented runtime requirements before executing it.\n\nOriginal repository CI snapshots are preserved as data under `source-config/.github`. Five noncanonical manifests/entrypoints for other providers are omitted; all mappings and upstream provenance are retained. Existing core/native release tags and assets are unchanged.\n\n## Publisher and support\n\nSolaris Technologies — [solaristek.com](https://solaristek.com). [Core project](https://github.com/Shaisolaris/solaris-dev-shop), [native distributions and support](https://github.com/Shaisolaris/solaris-dev-shop-plugins/issues). License: [MIT](LICENSE).\n", encoding='utf-8')
+    (OUT/'README.md').write_text("# Solaris Dev Shop for Gemini CLI\n\n**61 specialist employees + 1 chief-of-staff coordinator = 62 native workflows.**\n\nA native Gemini CLI extension with the pinned Solaris delivery, recovery and evidence runtime. Skills load on demand. The host supplies tools and approvals; local Python helpers require Python 3.10 or later. This is a workflow package, not 61 independently running model instances.\n\n## Install\n\n```sh\ngemini extensions install https://github.com/Shaisolaris/solaris-dev-shop-gemini\n```\n\nReview the CLI's installation and skill-activation prompts. Use `gemini skills list --all` to inspect discovery. For a reproducible installation, add `--ref <full reviewed commit SHA>` from this repository. Disable or uninstall using Gemini CLI's native extension commands.\n\n## Source and verification\n\nVersion **0.66.0** retains the reviewed native source at [3e65eac](https://github.com/Shaisolaris/solaris-dev-shop-plugins/commit/3e65eac657a155aab9d813a5093be6442ac57eef) and canonical core at [0391e15](https://github.com/Shaisolaris/solaris-dev-shop/commit/0391e15cc52ddfa88a6c02b5997fd9955e214491). `GEMINI-BUILD-SOURCE.json` binds all generated payload bytes and executable modes. `SOLARIS-BUILD-SOURCE.json` binds the 1,200 canonical files. The portable builder verifies against a fresh checkout of the exact upstream revision, rather than trusting a caller-edited payload manifest:\n\n```sh\npython -B tools/build_gemini.py --check . --self-test\n```\n\nNative Gemini CLI **0.65.0** was tested for 62 enabled workflows, local entrypoint discovery, coordinator self-tests and real local SQLite restore outcomes. CLI management tests make no model calls; they do not establish model quality, Google endorsement, or a vulnerability-free product. Original 61 employees and branding are preserved. This packaging adds **zero new employee capabilities**.\n\nThe extension declares no MCP servers, settings, lifecycle hooks, agents or security policies. It does not grant filesystem access beyond the host's tools and permissions. Helpers are not a security sandbox. Review the workflow and its documented runtime requirements before executing it.\n\nOriginal repository CI snapshots are preserved as data under `source-config/.github`. Five noncanonical manifests/entrypoints for other providers are omitted; all mappings and upstream provenance are retained. Existing core/native release tags and assets are unchanged.\n\n## Publisher and support\n\nSolaris Technologies — [solaristek.com](https://solaristek.com). [Core project](https://github.com/Shaisolaris/solaris-dev-shop), [native distributions and support](https://github.com/Shaisolaris/solaris-dev-shop-plugins/issues). License: [MIT](LICENSE).\n", encoding='utf-8')
     notice = add_resource_notices(OUT)
     provenance = json.loads((OUT/'SOLARIS-BUILD-SOURCE.json').read_text())
     for name, digest in provenance['canonical_files'].items():
@@ -80,7 +80,7 @@ def build(native, output):
     files = {str(f.relative_to(OUT)):{'sha256':sha(f.read_bytes()),'executable':bool(f.stat().st_mode&0o111)}
              for f in sorted(OUT.rglob('*')) if f.is_file()}
     record = {'prototype':False,'profile':'Gemini CLI extension','source_native_commit':REVISION,
-              'source_core_commit':CORE,'version':'0.65.0','canonical_files':len(provenance['canonical_files']),
+              'source_core_commit':CORE,'version':'0.66.0','canonical_files':len(provenance['canonical_files']),
               'workflows':62,'new_employee_capabilities':0,'distribution_notice':notice,'omitted_other_provider_files':sorted(OMIT),
               'relocated_repository_configuration':relocated,'source_file_map':maps,'files':files}
     (OUT/'GEMINI-BUILD-SOURCE.json').write_text(json.dumps(record,indent=2,sort_keys=True)+'\n')
