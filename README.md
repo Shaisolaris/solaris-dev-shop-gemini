@@ -14,7 +14,7 @@ Review the CLI's installation and skill-activation prompts. Use `gemini skills l
 
 ## Source and verification
 
-Version **0.66.0** retains the reviewed native source at [3e65eac](https://github.com/Shaisolaris/solaris-dev-shop-plugins/commit/3e65eac657a155aab9d813a5093be6442ac57eef) and canonical core at [0391e15](https://github.com/Shaisolaris/solaris-dev-shop/commit/0391e15cc52ddfa88a6c02b5997fd9955e214491). `GEMINI-BUILD-SOURCE.json` binds all generated payload bytes and executable modes. `SOLARIS-BUILD-SOURCE.json` binds the 1,200 canonical files. The portable builder verifies against a fresh checkout of the exact upstream revision, rather than trusting a caller-edited payload manifest:
+Version **0.66.0** retains the reviewed native source at [fc15552](https://github.com/Shaisolaris/solaris-dev-shop-plugins/commit/fc1555259dbeb7e5a8de79e59bb46f682dd11292) and canonical core at [cd1898c](https://github.com/Shaisolaris/solaris-dev-shop/commit/cd1898c6dc062a2dcf01a56b53403023c1994c8d). `GEMINI-BUILD-SOURCE.json` binds all generated payload bytes and executable modes. `SOLARIS-BUILD-SOURCE.json` binds the 1,200 canonical files. The portable builder verifies against a fresh checkout of the exact upstream revision, rather than trusting a caller-edited payload manifest:
 
 ```sh
 python -B tools/build_gemini.py --check . --self-test

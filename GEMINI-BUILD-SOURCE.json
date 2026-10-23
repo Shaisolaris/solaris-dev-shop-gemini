@@ -13,7 +13,7 @@
   "files": {
     "CHANGELOG.md": {
       "executable": false,
-      "sha256": "98a9439bad57bb5bd98919a934ddc89c54f545bb85ccaa2dec7ce864d79a6aba"
+      "sha256": "1d21897562713cadcff10ec328772fcc1d9be69fe2730b29ea79391a6495e688"
     },
     "CODE_OF_CONDUCT.md": {
       "executable": false,
@@ -45,7 +45,7 @@
     },
     "README.md": {
       "executable": false,
-      "sha256": "3ddacd48b092e2efe4fc6bed43c3919693c3694f1bc037a0316eb82ee03942ed"
+      "sha256": "168b300d57e23e5026f6c512f822cab535c899ce93d7d326ed823a71b913b6e0"
     },
     "ROADMAP.md": {
       "executable": false,
@@ -57,15 +57,15 @@
     },
     "SOLARIS-BUILD-SOURCE.json": {
       "executable": false,
-      "sha256": "b797702bd88199700864516bda8c36c6d18fa7e93504c64ca165f0f8edc1cf56"
+      "sha256": "fad42efd5d13d98960cd947d7c0f9f0f4c455e9bab9536ab6e07cc954ae55498"
     },
     "SOURCE-COPILOT-LAYOUT.json": {
       "executable": false,
-      "sha256": "b5bd723a9544b21f45443c1471bc7d9c23f1b10ccc1251f2aeeec720b0f578c3"
+      "sha256": "2949522e7943854a4d57db8dc316ea297b1ac3e8be874da270c3d6e70e42aca3"
     },
     "SOURCE-NATIVE-PROVENANCE.json": {
       "executable": false,
-      "sha256": "a743994bd85917a38147e7f8d9885c9fc9b9e2cefdba384ef1712fdfe6006537"
+      "sha256": "48ff0864c9a165fbdc2bd73407b2fb8e925a3aa2439af1971b606fab1b5f80c1"
     },
     "SOURCE-NOTICE.md": {
       "executable": false,
@@ -941,7 +941,7 @@
     },
     "employees/engineering/devops-engineer/gitops-skill.md": {
       "executable": false,
-      "sha256": "42f4142d6662837d3aae6d43e8ba6dd94b1fffd1afb3ffa7371a1699408e4f42"
+      "sha256": "d2aa552ade9205d8c5a8a7f375b73fd37bdb18982466f45df6686ff7966eb5ca"
     },
     "employees/engineering/devops-engineer/headless-fleet-runbook.md": {
       "executable": false,
@@ -1165,7 +1165,7 @@
     },
     "employees/engineering/mobile-developer/mobile-mcp-operator.md": {
       "executable": false,
-      "sha256": "50cfe385522c209c257cd365866b42ae38fd762f2caf922e59eae2a7d9b3a8ac"
+      "sha256": "3366f4798f631e9c759602517ddf47ba95564674eeb4ab3dd47f77ce46e30fb2"
     },
     "employees/engineering/mobile-developer/mobile-test-and-release.md": {
       "executable": false,
@@ -1297,7 +1297,7 @@
     },
     "employees/engineering/unreal-developer/unreal-mcp-operator.md": {
       "executable": false,
-      "sha256": "d672882cecd5a10b144a2580aa158cb36042cbdc3e7c6c97a34ff215b9494664"
+      "sha256": "0180e1d593eb0593d1eadb59bcbf47438c4e43822f6a9668444c8c13284dbdd1"
     },
     "employees/engineering/unreal-developer/unreal-scene-architecture.md": {
       "executable": false,
@@ -2757,7 +2757,7 @@
     },
     "employees/specialized/wordpress-master/diagnostics/diagnostic-core-integrity/SKILL.md": {
       "executable": false,
-      "sha256": "b470d56a9db826c7397ccbf63f91cf6cd779364f68016035982e2a7b5145d331"
+      "sha256": "7ee1638f246b4055c08925fc2e20ff9fa1cb8952fc9980e2b1086ae808aa4c9c"
     },
     "employees/specialized/wordpress-master/diagnostics/diagnostic-cron-analysis/SKILL.md": {
       "executable": false,
@@ -2793,7 +2793,7 @@
     },
     "employees/specialized/wordpress-master/diagnostics/diagnostic-user-audit/SKILL.md": {
       "executable": false,
-      "sha256": "1ea6d843b1994b98d56f0de8a4a83d9d466e728b6abf2a5a3d7d742bd9fdb236"
+      "sha256": "ddb37bed7db322bf50ebc56006c1d6ed71b3cef4cef6e93905b0736646d421f0"
     },
     "employees/specialized/wordpress-master/diagnostics/diagnostic-version-audit/SKILL.md": {
       "executable": false,
@@ -4489,7 +4489,7 @@
     },
     "examples/capabilities/G42/plan.json": {
       "executable": false,
-      "sha256": "63d78e98eac8ad7c09a158fd5323c92c83feb3713b12a3db86e261e66b139d05"
+      "sha256": "4293dde15dbe4a6221d8baae7d4cd793cdcb5fedd1ba0b1657017113a98232e8"
     },
     "examples/escalation/README.md": {
       "executable": false,
@@ -5705,7 +5705,7 @@
     },
     "skills/devops-engineer/resources/canonical/employees/engineering/devops-engineer/gitops-skill.md": {
       "executable": false,
-      "sha256": "42f4142d6662837d3aae6d43e8ba6dd94b1fffd1afb3ffa7371a1699408e4f42"
+      "sha256": "d2aa552ade9205d8c5a8a7f375b73fd37bdb18982466f45df6686ff7966eb5ca"
     },
     "skills/devops-engineer/resources/canonical/employees/engineering/devops-engineer/headless-fleet-runbook.md": {
       "executable": false,
@@ -6357,7 +6357,7 @@
     },
     "skills/mobile-developer/resources/canonical/employees/engineering/mobile-developer/mobile-mcp-operator.md": {
       "executable": false,
-      "sha256": "50cfe385522c209c257cd365866b42ae38fd762f2caf922e59eae2a7d9b3a8ac"
+      "sha256": "3366f4798f631e9c759602517ddf47ba95564674eeb4ab3dd47f77ce46e30fb2"
     },
     "skills/mobile-developer/resources/canonical/employees/engineering/mobile-developer/mobile-test-and-release.md": {
       "executable": false,
@@ -7369,7 +7369,7 @@
     },
     "skills/unreal-developer/resources/canonical/employees/engineering/unreal-developer/unreal-mcp-operator.md": {
       "executable": false,
-      "sha256": "d672882cecd5a10b144a2580aa158cb36042cbdc3e7c6c97a34ff215b9494664"
+      "sha256": "0180e1d593eb0593d1eadb59bcbf47438c4e43822f6a9668444c8c13284dbdd1"
     },
     "skills/unreal-developer/resources/canonical/employees/engineering/unreal-developer/unreal-scene-architecture.md": {
       "executable": false,
@@ -7573,7 +7573,7 @@
     },
     "skills/wordpress-master/resources/canonical/employees/specialized/wordpress-master/diagnostics/diagnostic-core-integrity/SKILL.md": {
       "executable": false,
-      "sha256": "b470d56a9db826c7397ccbf63f91cf6cd779364f68016035982e2a7b5145d331"
+      "sha256": "7ee1638f246b4055c08925fc2e20ff9fa1cb8952fc9980e2b1086ae808aa4c9c"
     },
     "skills/wordpress-master/resources/canonical/employees/specialized/wordpress-master/diagnostics/diagnostic-cron-analysis/SKILL.md": {
       "executable": false,
@@ -7609,7 +7609,7 @@
     },
     "skills/wordpress-master/resources/canonical/employees/specialized/wordpress-master/diagnostics/diagnostic-user-audit/SKILL.md": {
       "executable": false,
-      "sha256": "1ea6d843b1994b98d56f0de8a4a83d9d466e728b6abf2a5a3d7d742bd9fdb236"
+      "sha256": "ddb37bed7db322bf50ebc56006c1d6ed71b3cef4cef6e93905b0736646d421f0"
     },
     "skills/wordpress-master/resources/canonical/employees/specialized/wordpress-master/diagnostics/diagnostic-version-audit/SKILL.md": {
       "executable": false,
@@ -7745,7 +7745,7 @@
     },
     "tests/test_explicit_runtime_setup.py": {
       "executable": false,
-      "sha256": "9c5b61f35efba210618864ce36f6e94dad0d4768f224b38048b27cdbd33f3835"
+      "sha256": "3d2913d599d556994e7ea1becf364aeb9be158755bcfccbabf9096b8925fe12d"
     },
     "tests/test_fixture_runner.py": {
       "executable": false,
@@ -7893,7 +7893,7 @@
     },
     "tests/test_g42_capability.py": {
       "executable": false,
-      "sha256": "0ad3063dfe0bd00bd3e7be2d55260a599bc50a955849b998e91605cd34d57c06"
+      "sha256": "190e8e35d660f02e0679d87505617b391ad215c9ded8a20fc9495463d278232d"
     },
     "tests/test_intake_features.py": {
       "executable": false,
@@ -7940,7 +7940,7 @@
     ".github/workflows/ci.yml": "source-config/.github/workflows/ci.yml",
     ".github/workflows/try-router.yml": "source-config/.github/workflows/try-router.yml"
   },
-  "source_core_commit": "0391e15cc52ddfa88a6c02b5997fd9955e214491",
+  "source_core_commit": "cd1898c6dc062a2dcf01a56b53403023c1994c8d",
   "source_file_map": {
     ".github/ISSUE_TEMPLATE/bug.md": "source-config/.github/ISSUE_TEMPLATE/bug.md",
     ".github/ISSUE_TEMPLATE/config.yml": "source-config/.github/ISSUE_TEMPLATE/config.yml",
@@ -7952,7 +7952,7 @@
     ".github/workflows/try-router.yml": "source-config/.github/workflows/try-router.yml",
     "COPILOT-LAYOUT.json": "SOURCE-COPILOT-LAYOUT.json"
   },
-  "source_native_commit": "3e65eac657a155aab9d813a5093be6442ac57eef",
+  "source_native_commit": "fc1555259dbeb7e5a8de79e59bb46f682dd11292",
   "version": "0.66.0",
   "workflows": 62
 }
